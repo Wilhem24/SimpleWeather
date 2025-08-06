@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <link rel="icon" type="image/jpg" href="icon.jpg" >
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+    <!-- Menu Section -->
+    <div id="menuSection" class="weather-container">
+    <img src="images\icon.jpg" alt="Weather App Icon" style="width:64px;height:64px;margin-bottom:1rem;">
+        <h1>Weather App</h1>
+        <button id="startBtn">Check Weather</button>
+    </div>
+
+    <!-- Weather Search Section (hidden by default) -->
+    <div id="weatherSection" class="weather-container" style="display:none;">
+        <button id="backBtn" style="float:left;">&#8592; Back</button>
+        <h2>Search Weather</h2>
+        <input type="text" id="cityInput" placeholder="Enter city name" />
+        <button onclick="getWeather()">Get Weather</button>
+        <div class="weather-result" id="weatherResult"></div>
+        <div id="recentSearches"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
